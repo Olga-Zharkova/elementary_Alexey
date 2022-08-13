@@ -11,7 +11,7 @@ class SettingsModel extends ElementaryModel {
   }
 
   Future<void> loadSomeData() async {
-    final a = await http.post(Uri.parse('https://api.waifu.pics/many/sfw/cuddle'), body: {});
+    final a = await http.post(Uri.parse('https://api.waifu.pics/many/sfw/waifu'), body: {});
     await Future.delayed(const Duration(seconds: 3));
     information.content('Данные');
   }
